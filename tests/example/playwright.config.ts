@@ -1,15 +1,19 @@
 import { PlaywrightTestConfig } from '@playwright/test'
 
 const config: PlaywrightTestConfig = {
+  reporter: [
+    ['list'],
+    ['allure-playwright'],
+  ],
   timeout: 60000,
   retries: 0,
   use: {
     headless: true,
     viewport: { width: 1280, height: 720 },
-    // meghatározza, hogy mennyit várjon egy adott action-re, click, type stb. mielőtt hibára fut
+    // viewport: { width: 1920, height: 1080 }, 
     actionTimeout: 15000,
     ignoreHTTPSErrors: true,
-    // készíthet videót és képet is a tesztekről, de ezt most kikapcsoltuk
+    // baseURL: 'http://zero.webappsecurity.com/bank/transfer-funds.html', 
     video: 'retain-on-failure',
     screenshot: 'only-on-failure',
   },

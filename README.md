@@ -1,4 +1,4 @@
-# :performing_arts: Playwright Test Automation Project
+# Playwright Test Automation Project
 
 This test automation project is designed to provide comprehensive end-to-end testing for The Free Online Bank Web site is published by Micro Focus Fortify[^1]. The project follows the Page Object Pattern structure to ensure maintainable and reusable test code.
 
@@ -29,6 +29,39 @@ In addition to E2E and visual testing, the project also includes API tests. Thes
 ### Automatic Test Execution through Jenkins
 
 The test cases can be run automatically from Jenkins, providing continuous integration and continuous delivery (CI/CD) capabilities. This means that you can run your tests automatically every time you make changes to the code, ensuring that the application always works as expected.
+
+## Integrations
+
+### Docker
+
+You can run the Playwright tests inside a Docker container for consistency across environments.
+
+```bash
+docker build -t playwright-tests .
+docker run --rm playwright-tests
+```
+
+Make sure your `Dockerfile` is set up to install dependencies and run your tests.
+
+### Microsoft Teams
+
+To receive test results or notifications in Microsoft Teams, configure a Teams webhook and use a script or CI step to send messages. Example using `curl`:
+
+```bash
+curl -H 'Content-Type: application/json' -d '{"text": "Playwright tests completed!"}' <YOUR_TEAMS_WEBHOOK_URL>
+```
+
+Integrate this step after your test execution to notify your Teams channel.
+
+### K6 (Performance Testing)
+
+You can use [k6](https://k6.io/) for performance testing alongside Playwright. Write your k6 scripts in JavaScript and run them as follows:
+
+```bash
+k6 run script.js
+```
+
+Refer to the [k6 documentation](https://k6.io/docs/) for more details on scripting and integration.
 
 ## Conclusion
 

@@ -1,5 +1,5 @@
 export async function loadHomepage(page) {
-  await page.goto('https://www.example.com')
+  await page.goto('http://zero.webappsecurity.com/bank/transfer-funds.html')
 }
 
 export async function assertTitle(page) {

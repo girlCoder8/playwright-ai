@@ -12,9 +12,12 @@
     "tests:api": "playwright test --config=./tests/api/api.config.ts --project=Chromium --reporter=list",
     "jenkins-server": "java -jar jenkins.war --httpPort=8080 --enable-future-java"
   },
-  "author": "Varju Zoltan",
+  "author": "girlCoder8",
   "license": "ISC",
   "dependencies": {
     "@playwright/test": "^1.25.1"
+  },
+  "devDependencies": {
+    "allure-playwright": "^3.2.2"
   }
 }

@@ -32,7 +32,11 @@ The test cases can be run automatically from Microsoft DevOps providing continuo
 
 ### Playwright AI Video
 
+<!-- Video preview with looping -->
 <video src="playwright-ai.mp4" loop muted autoplay playsinline style="max-width: 100%; height: auto;"></video>
+
+<!-- Direct download/view link -->
+[Watch/playwright-ai.mp4](playwright-ai.mp4)
 
 ## Integrations
 

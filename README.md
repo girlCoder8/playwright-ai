@@ -30,13 +30,10 @@ In addition to E2E and visual testing, the project also includes API tests. Thes
 
 The test cases can be run automatically from Microsoft DevOps providing continuous integration and continuous delivery (CI/CD) capabilities. This means that you can run your tests automatically every time you make changes to the code, ensuring that the application always works as expected.
 
-### Playwright AI Video
+### Playwright AI Video and Screenshot
+[playwright-ai.mp4](playwright-ai.mp4)
 
-<!-- Video preview with looping -->
-<video src="playwright-ai.mp4" loop muted autoplay playsinline style="max-width: 100%; height: auto;"></video>
-
-<!-- Direct download/view link -->
-[Watch/playwright-ai.mp4](playwright-ai.mp4)
+![playwright-ai.png](playwright-ai.png)
 
 ## Integrations
 

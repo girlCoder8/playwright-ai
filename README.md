@@ -26,9 +26,12 @@ The project also includes advanced visual testing features, allowing you to test
 
 In addition to E2E and visual testing, the project also includes API tests. These tests ensure that the application's APIs are working as intended, providing a comprehensive testing solution.
 
-### Automatic Test Execution through Jenkins
+### Automatic Test Execution through Microsoft DevOps
 
-The test cases can be run automatically from Jenkins, providing continuous integration and continuous delivery (CI/CD) capabilities. This means that you can run your tests automatically every time you make changes to the code, ensuring that the application always works as expected.
+The test cases can be run automatically from Microsoft DevOps providing continuous integration and continuous delivery (CI/CD) capabilities. This means that you can run your tests automatically every time you make changes to the code, ensuring that the application always works as expected.
+
+### Playwright AI Video
+[playwright-ai.mp4](playwright-ai.mp4)
 
 ## Integrations
 

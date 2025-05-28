@@ -31,7 +31,8 @@ In addition to E2E and visual testing, the project also includes API tests. Thes
 The test cases can be run automatically from Microsoft DevOps providing continuous integration and continuous delivery (CI/CD) capabilities. This means that you can run your tests automatically every time you make changes to the code, ensuring that the application always works as expected.
 
 ### Playwright AI Video
-[playwright-ai.mp4](playwright-ai.mp4)
+
+<video src="playwright-ai.mp4" loop muted autoplay playsinline style="max-width: 100%; height: auto;"></video>
 
 ## Integrations
 
@@ -88,13 +89,7 @@ You can use other scripts as well as described in `.\package.json`
     "tests:e2e": "playwright test --config=./tests/e2e/e2e.config.ts --project=Chromium --reporter=list",
     "tests:visual": "playwright test --config=./tests/visual/visual.config.ts --project=Chromium --update-snapshots --reporter=list",
     "tests:api": "playwright test --config=./tests/api/api.config.ts --project=Chromium --reporter=list",
-    "jenkins-server": "java -jar jenkins.war --httpPort=8080 --enable-future-java"
   },
-```
-
-**Run the tests from Jenkis based on parameters:**
-```shell
-npm run jenkins-server
 ```
 
 ![kép](https://user-images.githubusercontent.com/13703469/226626739-5529b326-d820-4acc-b176-28c1727a9a8c.png)

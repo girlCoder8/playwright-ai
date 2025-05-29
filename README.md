@@ -68,6 +68,19 @@ k6 run script.js
 
 Refer to the [k6 documentation](https://k6.io/docs/) for more details on scripting and integration.
 
+## Project Structure
+
+```
+playwright/
+├── tests/               # Test files and test suites
+├── pages/               # Page Object Model files
+├── fixtures/            # Custom fixtures for Playwright
+├── utils/               # Utility/helper functions
+├── playwright.config.ts # Playwright configuration file
+├── package.json         # Project dependencies and scripts
+└── README.md            # Project documentation
+```
+
 ## Conclusion
 
 This test automation project provides comprehensive testing, including E2E tests, advanced visual testing, and API tests. The Page Object Pattern structure ensures maintainable and reusable test code, while automatic test execution through Jenkins makes it easy to integrate testing into the development workflow.
